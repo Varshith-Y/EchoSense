@@ -91,3 +91,72 @@ Model weights must be downloaded separately (see below).
 git clone https://github.com/Varshith-Y/EchoSense.git
 cd EchoSense
 
+2. Install Dependencies
+
+If you have requirements.txt, run:
+pip install -r requirements.txt
+
+Otherwise, typical dependencies may include:
+pip install numpy pandas torch librosa scikit-learn matplotlib
+
+3. Download Model Weights
+
+Download from Google Drive:
+
+🔗 Model Weights
+https://drive.google.com/file/d/1-zcuc59wegeAEiVPOWyiDnptB-WkyswJ/view?usp=sharing
+
+Place the downloaded file into:
+/models
+Create this directory if it does not exist.
+
+▶️ Usage
+Run the Application
+python ui.py
+
+Steps:
+
+Launch the interface
+
+Provide audio input
+
+Receive generated text output
+
+For Model Experimentation
+
+Open:
+EchoSense.ipynb
+in Jupyter Notebook.
+
+📦 Model & Data
+
+The pretrained model is hosted externally (see link above).
+
+EchoSense.ipynb documents:
+
+Dataset preparation
+
+Feature extraction
+
+Training loops & hyperparameters
+
+Evaluation scores
+
+Model visualisations
+
+Data.pdf provides dataset notes and reference guidelines.
+
+🚀 Future Enhancements
+
+Planned expansions include:
+
+ASL-to-Text using computer vision
+
+Braille device integration
+
+Real-time speaker identification
+
+On-device inference for mobile/edge hardware
+
+Multi-modal interaction support (audio + gesture + text)
+
