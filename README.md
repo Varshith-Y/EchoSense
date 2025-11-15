@@ -54,3 +54,117 @@ EchoSense/
 ├── EchoSense.ipynb    # Model development and experimentation notebook
 ├── Data.pdf           # Dataset notes / reference information
 └── README.md          # Documentation
+```
+
+Model weights must be downloaded separately (see below).
+
+---
+
+## ⚙️ How It Works
+
+1. **Input Layer**  
+   User provides audio input (e.g., microphone or uploaded file).
+
+2. **Processing Layer**  
+   - Audio is cleaned and transformed  
+   - Passed into the pretrained model  
+   - Text prediction is generated  
+
+3. **Output Layer**  
+   - Text is displayed within the GUI  
+   - Future versions will support haptic or Braille-style output  
+
+**Tech Stack Includes**  
+- Python  
+- Torch (or similar ML framework)  
+- Librosa  
+- Jupyter Notebook  
+- Custom GUI  
+
+---
+
+## 🛠 Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Varshith-Y/EchoSense.git
+cd EchoSense
+```
+
+### 2. Install Dependencies
+
+If you have a `requirements.txt` file, run:
+
+```bash
+pip install -r requirements.txt
+```
+
+Otherwise, typical dependencies may include:
+
+```bash
+pip install numpy pandas torch librosa scikit-learn matplotlib
+```
+
+### 3. Download Model Weights
+
+Download from Google Drive:
+
+🔗 **Model Weights**  
+https://drive.google.com/file/d/1-zcuc59wegeAEiVPOWyiDnptB-WkyswJ/view?usp=sharing
+
+Place the downloaded file into:
+
+```text
+models/
+```
+
+Create this directory if it does not exist.
+
+---
+
+## ▶️ Usage
+
+### Run the Application
+
+```bash
+python ui.py
+```
+
+**Steps:**
+
+1. Launch the interface  
+2. Provide audio input  
+3. Receive generated text output  
+
+### For Model Experimentation
+
+Open `EchoSense.ipynb` in Jupyter Notebook.
+
+---
+
+## 📦 Model & Data
+
+- The pretrained model is hosted externally (see model weights link above).  
+- `EchoSense.ipynb` documents:
+  - Dataset preparation  
+  - Feature extraction  
+  - Training loops & hyperparameters  
+  - Evaluation scores  
+  - Model visualisations  
+
+- `Data.pdf` provides dataset notes and reference guidelines.
+
+---
+
+## 🚀 Future Enhancements
+
+Planned expansions include:
+
+- ASL-to-Text using computer vision  
+- Braille device integration  
+- Real-time speaker identification  
+- On-device inference for mobile/edge hardware  
+- Multi-modal interaction support (audio + gesture + text)
+
+---
