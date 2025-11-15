@@ -49,3 +49,45 @@ Designed for future expansions such as ASL-to-text or Braille output.
 
 ## 📁 Project Structure
 
+EchoSense/
+│
+├── ui.py # Main UI application
+├── EchoSense.ipynb # Model development and experimentation notebook
+├── Data.pdf # Dataset notes / reference information
+└── README.md # Documentation
+
+
+Model weights must be downloaded separately (see below).
+
+---
+
+## ⚙️ How It Works
+
+1. **Input Layer**  
+   User provides audio input (e.g., microphone or uploaded file).
+
+2. **Processing Layer**  
+   - Audio is cleaned and transformed  
+   - Passed into the pretrained model  
+   - Text prediction is generated  
+
+3. **Output Layer**  
+   - Text is displayed within the GUI  
+   - Future versions will support haptic or Braille-style output  
+
+**Tech Stack Includes**  
+- Python  
+- Torch (or similar ML framework)  
+- Librosa  
+- Jupyter Notebook  
+- Custom GUI  
+
+---
+
+## 🛠 Installation
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Varshith-Y/EchoSense.git
+cd EchoSense
+
